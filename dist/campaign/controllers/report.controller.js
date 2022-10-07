@@ -30,7 +30,6 @@ let ReportCampController = class ReportCampController {
         return this.reportCampService.getAllReports();
     }
     createReportPost(data) {
-        this.logger.log(data);
         return this.reportCampService.createReport(data);
     }
     resolveReportPut(param) {
@@ -66,7 +65,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], ReportCampController.prototype, "resolveReportPut", null);
 ReportCampController = __decorate([
-    (0, common_1.Controller)('api/v3/campaign/report'),
+    (0, common_1.Controller)('api/v3/reports'),
     __metadata("design:paramtypes", [reportCamp_service_1.ReportCampService])
 ], ReportCampController);
 exports.ReportCampController = ReportCampController;

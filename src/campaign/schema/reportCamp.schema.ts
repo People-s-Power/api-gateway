@@ -3,7 +3,10 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 import { ReportEnum } from './reportCamp.dto';
 
-export type ReportCampDocument = ReportCamp & Document;
+export type ReportCampDocument = ReportCamp & Document & {
+  _id: any;
+  _doc: any;
+};
 
 
 @Schema({

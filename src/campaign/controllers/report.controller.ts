@@ -2,7 +2,7 @@ import { Body, Controller, Get, Inject, Param, Post, Put, Logger } from '@nestjs
 import { reportDTO } from '../schema/reportCamp.dto';
 import { ReportCampService } from '../services/reportCamp.service';
 
-@Controller('api/v3/campaign/report')
+@Controller('api/v3/reports')
 export class ReportCampController {
   logger: Logger;
   constructor(
@@ -25,7 +25,6 @@ export class ReportCampController {
 
     @Post()
     createReportPost(@Body() data: reportDTO) {
-      this.logger.log(data)
       return this.reportCampService.createReport(data);
     }
 

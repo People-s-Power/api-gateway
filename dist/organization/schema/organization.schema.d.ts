@@ -24,7 +24,7 @@
 /// <reference types="mongoose/types/inferschematype" />
 import { Ioperators } from './organization.dto';
 import { Document } from 'mongoose';
-export declare type organizationDocument = orgnaization & Document & {
+export type organizationDocument = orgnaization & Document & {
     _id: any;
     _doc: any;
 };
@@ -48,4 +48,4 @@ export declare class orgnaization {
     city: string;
     website: string;
 }
-export declare const orgnaizationSchema: import("mongoose").Schema<orgnaization, import("mongoose").Model<orgnaization, any, any, any, any>, {}, {}, {}, {}, "type", orgnaization>;
+export declare const orgnaizationSchema: import("mongoose").Schema<orgnaization, import("mongoose").Model<orgnaization, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, orgnaization>;

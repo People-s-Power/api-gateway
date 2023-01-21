@@ -24,7 +24,7 @@
 /// <reference types="mongoose/types/inferschematype" />
 import { Document } from 'mongoose';
 import { ReportEnum } from './reportCamp.dto';
-export declare type ReportCampDocument = ReportCamp & Document & {
+export type ReportCampDocument = ReportCamp & Document & {
     _id: any;
     _doc: any;
 };
@@ -33,4 +33,4 @@ export declare class ReportCamp extends Document {
     reportCampType: ReportEnum;
     reportCampMessage: string;
 }
-export declare const ReportCampSchema: import("mongoose").Schema<ReportCamp, import("mongoose").Model<ReportCamp, any, any, any, any>, {}, {}, {}, {}, "type", ReportCamp>;
+export declare const ReportCampSchema: import("mongoose").Schema<ReportCamp, import("mongoose").Model<ReportCamp, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, ReportCamp>;

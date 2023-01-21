@@ -24,9 +24,9 @@
 /// <reference types="mongoose/types/inferschematype" />
 import { Document } from 'mongoose';
 import { Campaign } from './campaign.schema';
-export declare type UpdateDocument = Update & Document;
+export type UpdateDocument = Update & Document;
 export declare class Update {
     campaign: Record<string, Campaign>;
     body: string;
 }
-export declare const UpdateSchema: import("mongoose").Schema<Update, import("mongoose").Model<Update, any, any, any, any>, {}, {}, {}, {}, "type", Update>;
+export declare const UpdateSchema: import("mongoose").Schema<Update, import("mongoose").Model<Update, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Update>;

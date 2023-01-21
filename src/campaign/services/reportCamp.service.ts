@@ -40,7 +40,7 @@ export class ReportCampService {
     }
   }
 
-  async resolveReport(reportId: String) {
+  async resolveReport(reportId: String): Promise<any> {
     const report = await this.reportModel.deleteOne({ _id: reportId })
     return report
   }

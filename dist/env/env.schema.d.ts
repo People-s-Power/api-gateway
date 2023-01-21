@@ -23,7 +23,7 @@
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose/types/inferschematype" />
 import { Document } from 'mongoose';
-export declare type EnvDocument = Env & Document & {
+export type EnvDocument = Env & Document & {
     id: any;
     _doc: any;
 };
@@ -32,4 +32,4 @@ export declare class Env {
     value: string;
     isPrivate: boolean;
 }
-export declare const EnvSchema: import("mongoose").Schema<Env, import("mongoose").Model<Env, any, any, any, any>, {}, {}, {}, {}, "type", Env>;
+export declare const EnvSchema: import("mongoose").Schema<Env, import("mongoose").Model<Env, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Env>;

@@ -24,7 +24,7 @@
 /// <reference types="mongoose/types/inferschematype" />
 import { AccountTypeEnum, StaffRoleEnum } from '../dto/user.dto';
 import { Document } from 'mongoose';
-export declare type UserDocument = User & Document & {
+export type UserDocument = User & Document & {
     _id: any;
     _doc: any;
 };
@@ -64,4 +64,4 @@ export declare class User {
     followingCount: number;
     createdOrg: boolean;
 }
-export declare const UserSchema: import("mongoose").Schema<User, import("mongoose").Model<User, any, any, any, any>, {}, {}, {}, {}, "type", User>;
+export declare const UserSchema: import("mongoose").Schema<User, import("mongoose").Model<User, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, User>;

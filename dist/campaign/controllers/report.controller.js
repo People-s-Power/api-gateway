@@ -62,7 +62,7 @@ __decorate([
     __param(0, (0, common_1.Param)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], ReportCampController.prototype, "resolveReportPut", null);
 ReportCampController = __decorate([
     (0, common_1.Controller)('api/v3/reports'),

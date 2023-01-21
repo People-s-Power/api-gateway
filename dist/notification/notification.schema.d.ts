@@ -23,7 +23,7 @@
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose/types/inferschematype" />
 import { Document } from 'mongoose';
-export declare type NoticeDocument = Notice & Document & {
+export type NoticeDocument = Notice & Document & {
     _doc: any;
 };
 export declare class Notice {
@@ -32,4 +32,4 @@ export declare class Notice {
     db_model: string;
     author: string;
 }
-export declare const NoticeSchema: import("mongoose").Schema<Notice, import("mongoose").Model<Notice, any, any, any, any>, {}, {}, {}, {}, "type", Notice>;
+export declare const NoticeSchema: import("mongoose").Schema<Notice, import("mongoose").Model<Notice, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Notice>;

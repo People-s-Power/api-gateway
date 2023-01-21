@@ -23,7 +23,7 @@
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose/types/inferschematype" />
 import { Document } from 'mongoose';
-export declare type FollowerDocument = Follower & Document;
+export type FollowerDocument = Follower & Document;
 export declare class Follower {
     userId: string;
     followers: string[];
@@ -31,4 +31,4 @@ export declare class Follower {
     followersCount: number;
     followingCount: number;
 }
-export declare const FollowerSchema: import("mongoose").Schema<Follower, import("mongoose").Model<Follower, any, any, any, any>, {}, {}, {}, {}, "type", Follower>;
+export declare const FollowerSchema: import("mongoose").Schema<Follower, import("mongoose").Model<Follower, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Follower>;

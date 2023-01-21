@@ -55,7 +55,8 @@ import { OrganizationModule } from './organization/organization.module';
       installSubscriptionHandlers: true,
       path: '/graphql',
       cors: {
-        origin:  ['https://www.peoplespow.com', 'http://localhost:3000'],
+        // origin:  ['https://www.peoplespow.com', 'http://localhost:3000'],
+        origin: "*",
         credentials: true,
       },
       playground: true,

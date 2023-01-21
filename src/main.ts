@@ -13,6 +13,10 @@ import {corsOptions,credentials} from "./cors"
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors({
+    credentials: true,
+    origin: "*"
+  });
   // app.setGlobalPrefix('api/v3/')
 
   
@@ -22,7 +26,8 @@ async function bootstrap() {
 
   // app.use(cors(corsOptions))
   app.use(cors({
-    origin: ['https://peoplespow.com', 'https://www.peoplespow.com', 'http://localhost:3000', ],
+    // origin: ['https://peoplespow.com', 'https://www.peoplespow.com', 'http://localhost:3000', ],
+    origin: "*",
     credentials: true,
   }))
 

@@ -8,8 +8,12 @@ const location_middleware_1 = require("./middlewares/location.middleware");
 const cors = require("cors");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
+    app.enableCors({
+        credentials: true,
+        origin: "*"
+    });
     app.use(cors({
-        origin: ['https://peoplespow.com', 'https://www.peoplespow.com', 'http://localhost:3000',],
+        origin: "*",
         credentials: true,
     }));
     app.use(location_middleware_1.locationLogger);

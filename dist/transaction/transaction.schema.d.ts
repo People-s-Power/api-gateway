@@ -25,7 +25,7 @@
 import { Document } from 'mongoose';
 import { User } from 'src/user/entity/user.schema';
 import { PaymentPurposeEnum } from './transaction.interface';
-export declare type TransactionDocument = Transaction & Document & {
+export type TransactionDocument = Transaction & Document & {
     _doc: any;
 };
 export declare class Transaction {
@@ -43,4 +43,4 @@ export declare class Transaction {
     key: string;
     name: string;
 }
-export declare const TransactionSchema: import("mongoose").Schema<Transaction, import("mongoose").Model<Transaction, any, any, any, any>, {}, {}, {}, {}, "type", Transaction>;
+export declare const TransactionSchema: import("mongoose").Schema<Transaction, import("mongoose").Model<Transaction, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Transaction>;

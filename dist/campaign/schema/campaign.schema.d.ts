@@ -25,10 +25,10 @@
 import { Document } from 'mongoose';
 import { UserDocument } from 'src/user/entity/user.schema';
 import { IEndorsement } from '../dto/campaign.interface';
-export declare type CampaignDocument = Campaign & Document & {
+export type CampaignDocument = Campaign & Document & {
     _doc: any;
 };
-export declare type ViewDocument = View & Document;
+export type ViewDocument = View & Document;
 export declare class Campaign {
     title: string;
     image: string;
@@ -59,5 +59,5 @@ export declare class Campaign {
 export declare class View {
     user: UserDocument;
 }
-export declare const ViewSchema: import("mongoose").Schema<View, import("mongoose").Model<View, any, any, any, any>, {}, {}, {}, {}, "type", View>;
-export declare const CampaignSchema: import("mongoose").Schema<Campaign, import("mongoose").Model<Campaign, any, any, any, any>, {}, {}, {}, {}, "type", Campaign>;
+export declare const ViewSchema: import("mongoose").Schema<View, import("mongoose").Model<View, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, View>;
+export declare const CampaignSchema: import("mongoose").Schema<Campaign, import("mongoose").Model<Campaign, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Campaign>;

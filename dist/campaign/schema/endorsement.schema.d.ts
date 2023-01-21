@@ -25,7 +25,7 @@
 import { Document } from 'mongoose';
 import { User } from 'src/user/entity/user.schema';
 import { Campaign } from './campaign.schema';
-export declare type EndorsementDocument = Endorsement & Document;
+export type EndorsementDocument = Endorsement & Document;
 export declare class Endorsement {
     author: Record<string, User>;
     campaign: Record<string, Campaign>;
@@ -35,4 +35,4 @@ export declare class Endorsement {
     updatedAt: Date;
     likeCount: number;
 }
-export declare const EndorsementSchema: import("mongoose").Schema<Endorsement, import("mongoose").Model<Endorsement, any, any, any, any>, {}, {}, {}, {}, "type", Endorsement>;
+export declare const EndorsementSchema: import("mongoose").Schema<Endorsement, import("mongoose").Model<Endorsement, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, Endorsement>;

@@ -29,7 +29,7 @@ export class ReportCampController {
     }
 
     @Put('/:reportId')
-    resolveReportPut(@Param() param) {
+    resolveReportPut(@Param() param): Promise<any> {
       const { reportId } = param
       return this.reportCampService.resolveReport(reportId);
     }

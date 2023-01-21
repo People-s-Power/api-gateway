@@ -230,6 +230,6 @@ export interface User {
     updatedAt?: Nullable<Date>;
     myUsers?: Nullable<Nullable<User>[]>;
 }
-export declare type Upload = any;
-declare type Nullable<T> = T | null;
+export type Upload = any;
+type Nullable<T> = T | null;
 export {};
